@@ -1,0 +1,78 @@
+:root {
+  --text-color: #64ccc5;
+  --text-convert: #dafffb;
+  --bg-color: #faf2d3;
+  --content-color: #3085c3;
+  --box-color: #cdfad5;
+  --box-text: #12486b;
+  --sub-color: #f9f3cc;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  color: var(--text-color);
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  background: -webkit-linear-gradient(var(--content-color), var(--sub-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-box {
+  width: 70vw;
+  height: 20vh;
+  background: var(--content-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  box-shadow: 0px 0px 7px 1px #5cd2e6;
+  color: var(--sub-color);
+}
+
+span.convert {
+  color: var(--text-convert);
+  font-size: 24px;
+}
+
+.box {
+  border-radius: 10rem;
+  background: var(--box-color);
+  color: var(--box-text);
+  text-align: center;
+  width: 10em;
+  height: 2em;
+  font-size: 14px;
+  border: none;
+}
+
+.swap {
+  cursor: pointer;
+}
+
+@media (max-width: 1180px) {
+  .content-box {
+    display: grid;
+    place-items: center;
+    padding: 5rem;
+    margin: 10%;
+    width: 20rem;
+    height: auto;
+  }
+}
