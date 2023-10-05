@@ -40,7 +40,7 @@ export default function App() {
     <>
       <h1>CURRENCY CONVERTER</h1>
       <div className="content-box">
-        <Amount amount={amount} setAmount={setAmount} isLoading={isLoading} />
+        <Amount amount={amount} setAmount={setAmount} />
         <Currency cur={cur1} setCur={setCur1} isLoading={isLoading} />
         <img
           src="swap.png"
@@ -63,7 +63,6 @@ function Amount({ amount, setAmount, isLoading }) {
         type="text"
         value={amount}
         onChange={(e) => setAmount(Number(e.target.value))}
-        disabled={isLoading}
       />
     </div>
   );
