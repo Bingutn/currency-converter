@@ -37,7 +37,7 @@ export default function App() {
   );
 
   return (
-    <>
+    <div className="container">
       <h1>CURRENCY CONVERTER</h1>
       <div className="content-box">
         <Amount amount={amount} setAmount={setAmount} />
@@ -51,11 +51,11 @@ export default function App() {
         <Currency cur={cur2} setCur={setCur2} isLoading={isLoading} />
         <Result amount={amount} cur1={cur1} result={result} cur2={cur2} />
       </div>
-    </>
+    </div>
   );
 }
 
-function Amount({ amount, setAmount, isLoading }) {
+function Amount({ amount, setAmount }) {
   return (
     <div>
       <input
