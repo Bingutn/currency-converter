@@ -32,6 +32,15 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.container {
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
 .content-box {
   width: 70vw;
   height: 20vh;
